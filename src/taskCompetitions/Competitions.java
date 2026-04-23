@@ -106,6 +106,9 @@ public class Competitions {
         obstacles.add(new Wall(competitions.generateObstacleProperties(new Human())[1]));          // стена 3 м
         obstacles.add(new Treadmill(competitions.generateObstacleProperties(new Robot())[0]));  // дорожка 1500 м
         obstacles.add(new Wall(competitions.generateObstacleProperties(new Robot())[1]));
+        for(Object o :obstacles){
+            System.out.println(o.toString());
+        }
 
         // Создаем участников
         List<Skills> participants = new ArrayList<>();
